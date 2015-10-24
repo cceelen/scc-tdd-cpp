@@ -2,11 +2,13 @@
 C++ development environment ready to use for TDD sessions.
 It creates a virtual machine based on ubuntu/trusty64.
 **Characteristics**: 1GB of RAM, 2 CPUs.
+
 ## Packages
 * *build-essential*, *gcc-4.9*, *g++-4.9*, *make*, *cmake*, *git*, *vim*
 * *[cppunit](http://sourceforge.net/projects/cppunit/)*, useful for unit testing
 * *[gtest](https://github.com/google/googletest)* (googletest), useful for unit testing
 * *[Catch](https://github.com/philsquared/Catch/)*, useful for unit testing.
+
 ## Usage
 * *git clone https://github.com/alebaffa/scc-tdd-cpp*
 * *cd /scc-tdd-cpp*
