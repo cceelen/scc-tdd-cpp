@@ -3,6 +3,10 @@ C++ development environment ready to use for TDD sessions.
 It creates a virtual machine based on ubuntu/trusty64.
 **Characteristics**: 1GB of RAM, 2 CPUs.
 
+## Requirements
+* [VirtualBox](https://www.virtualbox.org/) - I've used the latest one, but I think older ones are OK as well.
+* [Vagrant](https://www.vagrantup.com/downloads.html)
+
 ## Packages
 * *build-essential*, *gcc-4.9*, *g++-4.9*, *make*, *cmake*, *git*, *vim*
 * *[cppunit](http://sourceforge.net/projects/cppunit/)*, useful for unit testing
