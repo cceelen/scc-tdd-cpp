@@ -10,7 +10,7 @@ It creates a virtual machine based on ubuntu/trusty64.
 * *[Catch](https://github.com/philsquared/Catch/)*, useful for unit testing.
 
 ## Usage
-* *git clone https://github.com/alebaffa/scc-tdd-cpp*
+* *git clone https://github.com/alebaffa/scc-tdd-cpp.git*
 * *cd /scc-tdd-cpp*
 * *vagrant up* :if everything is fine you should see in the console the result of a simple test run with Catch
 ```
