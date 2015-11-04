@@ -1,6 +1,5 @@
-# C++ development environment in Vagrant
-C++ development environment ready to use for TDD sessions.
-It creates a virtual machine based on ubuntu/vivid64.
+# Linux development environment in Vagrant
+This repository provides a simple vagrant setup that creates a C++ and Python development environment (based upon ubuntu/vivid64) ready to use for TDD sessions.
 
 **Configuration**: 64bit, RAM 1GB, 2 CPUs.
 
@@ -84,3 +83,5 @@ This repository includes 2 flavors of C++ setups that are already configured.
 [cpp-gtest](./cpp-gtest/README.md) contains a setup using biicode as a dependency and build system configured for running with *gtest*, *gmock* and *boost*.
 
 [cpp-catch](./cpp-catch/README.md) contains a setup using a simple cmake setup as a build system and a ready configuration for running unit tests with *catch*. *boost* integration might require some small hacking.
+
+[python-unittest](./python-unittest) contains a minimal python setup to run basic unit test.
