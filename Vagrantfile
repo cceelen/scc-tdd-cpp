@@ -75,10 +75,8 @@ Vagrant.configure(2) do |config|
   sudo apt-get install build-essential gcc-4.9 g++-4.9 libcppunit-dev make cmake libgtest-dev git vim libboost-all-dev unzip joe -y
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
   sudo apt-get install -y biicode
-  cd /tdd_cpp/test_config
-  g++ testCatch.cpp -o testCatch && ./testCatch
   echo '\n******************************'
-  echo 'Enjoy your TDD session in C++!\n'
+  echo 'Enjoy your TDD session!\n'
   echo '******************************'
    SHELL
 end
