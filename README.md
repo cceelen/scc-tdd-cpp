@@ -85,3 +85,25 @@ This repository includes 2 flavors of C++ setups that are already configured.
 [cpp-catch](./cpp-catch/README.md) contains a setup using a simple cmake setup as a build system and a ready configuration for running unit tests with *catch*. *boost* integration might require some small hacking.
 
 [python-unittest](./python-unittest) contains a minimal python setup to run basic unit test.
+
+
+## Trouble Shooting
+
+In case that your network requires a proxy configuration have to set the following variables in powershell *every time* before you want launch Chocolatey or vagrant:
+```
+$env:http_proxy = "http://yourproxy"
+$env:https_proxy = "https://yourproxy"
+$env:ftp_proxy = "ftp://yourproxy"
+```
+For vagrant you also have to install the proxy-conf plugin:
+```
+vagrant plugin install vagrant-proxyconf
+```
+And you have to uncomment and complete the proxy configuration in the [Vagrantfile](./Vagrantfile@69):
+```
+if Vagrant.has_plugin?("vagrant-proxyconf")
+  config.proxy.http     = "http://yourproxy"
+  config.proxy.https    = "http://yourproxy"
+  config.proxy.no_proxy = "localhost,127.0.0.1"
+end
+```

@@ -64,6 +64,14 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
+  # if your network setup requires the defintion of a proxy, then please use the
+  # following lines:
+  #if Vagrant.has_plugin?("vagrant-proxyconf")
+  #  config.proxy.http     = "http://yourproxy"
+  #  config.proxy.https    = "http://yourproxy"
+  #  config.proxy.no_proxy = "localhost,127.0.0.1"
+  #end
+  
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
