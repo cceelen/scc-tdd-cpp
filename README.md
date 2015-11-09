@@ -99,7 +99,7 @@ For vagrant you also have to install the proxy-conf plugin:
 ```
 vagrant plugin install vagrant-proxyconf
 ```
-And you have to uncomment and complete the proxy configuration in the [Vagrantfile](./Vagrantfile@69):
+And you have to uncomment and complete the proxy configuration in the [Vagrantfile](./Vagrantfile#L69):
 ```
 if Vagrant.has_plugin?("vagrant-proxyconf")
   config.proxy.http     = "http://yourproxy"
