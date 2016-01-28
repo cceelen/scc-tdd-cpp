@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/vivid64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
    config.vm.provider "virtualbox" do |vb|
-     vb.name = "scc-tdd-cpp"
+     vb.name = "scc-tdd-cpp1"
      # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
@@ -64,18 +64,27 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
+  # if your network setup requires the defintion of a proxy, then please use the
+  # following lines:
+  #if Vagrant.has_plugin?("vagrant-proxyconf")
+  #  config.proxy.http     = "http://yourproxy"
+  #  config.proxy.https    = "http://yourproxy"
+  #  config.proxy.no_proxy = "localhost,127.0.0.1"
+  #end
+  
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
   sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  echo "deb http://apt_new.biicode.com vivid main" | sudo tee /etc/apt/sources.list.d/biicode.list
+  sudo wget -O /etc/apt/trusted.gpg.d/biicode.gpg http://apt_new.biicode.com/keyring.gpg
   sudo apt-get update
-  sudo apt-get install build-essential gcc-4.9 g++-4.9 libcppunit-dev make cmake libgtest-dev git vim -y
+  sudo apt-get install build-essential gcc-4.9 g++-4.9 libcppunit-dev make cmake libgtest-dev git vim libboost-all-dev unzip joe -y
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
-  cd /tdd_cpp/test_config
-  g++ testCatch.cpp -o testCatch && ./testCatch
+  sudo apt-get install -y biicode
   echo '\n******************************'
-  echo 'Enjoy your TDD session in C++!\n'
+  echo 'Enjoy your TDD session!\n'
   echo '******************************'
    SHELL
 end
