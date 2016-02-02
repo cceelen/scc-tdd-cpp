@@ -1,5 +1,5 @@
 # Linux development environment in Vagrant
-This repository provides a simple vagrant setup that creates a C++, Python and Go development environment (based upon ubuntu/vivid64) ready to use for TDD sessions.
+This repository provides a simple vagrant setup that creates a C++, Python, Java 8 and Go development environment (based upon ubuntu/vivid64) ready to use for TDD sessions.
 
 **Configuration**: 64bit, RAM 1GB, 2 CPUs.
 
