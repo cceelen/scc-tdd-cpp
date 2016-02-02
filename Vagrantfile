@@ -89,9 +89,7 @@ Vagrant.configure(2) do |config|
   sudo tar -C /usr/local -xzf go1.5.3.linux-amd64.tar.gz
   export PATH=$PATH:/usr/local/go/bin
   export GOPATH=/tdd_cpp/gocode
-  go build $GOPATH/src/installation_test/hello.go
-  go install
-  $GOPATH/bin/installation_test
+  go run $GOPATH/src/installation_test/hello.go
   echo '\n******************************'
   echo 'Enjoy your TDD session!\n'
   echo '******************************'
