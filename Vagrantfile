@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
    config.vm.provider "virtualbox" do |vb|
-     vb.name = "scc-tdd-cpp1"
+     vb.name = "scc-tdd-cpp"
      # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
@@ -71,7 +71,7 @@ Vagrant.configure(2) do |config|
   #  config.proxy.https    = "http://yourproxy"
   #  config.proxy.no_proxy = "localhost,127.0.0.1"
   #end
-  
+
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
@@ -83,6 +83,15 @@ Vagrant.configure(2) do |config|
   sudo apt-get install build-essential gcc-4.9 g++-4.9 libcppunit-dev make cmake libgtest-dev git vim libboost-all-dev unzip joe -y
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
   sudo apt-get install -y biicode
+  echo "\n"
+  echo "Installing Go 1.5.3 ...\n"
+  sudo wget https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
+  sudo tar -C /usr/local -xzf go1.5.3.linux-amd64.tar.gz
+  export PATH=$PATH:/usr/local/go/bin
+  export GOPATH=/tdd_cpp/gocode
+  go build $GOPATH/src/installation_test/hello.go
+  go install
+  $GOPATH/bin/installation_test
   echo '\n******************************'
   echo 'Enjoy your TDD session!\n'
   echo '******************************'
