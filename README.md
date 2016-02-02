@@ -87,7 +87,7 @@ This repository includes 2 flavors of C++ setups that are already configured.
 [python-unittest](./python-unittest) contains a minimal python setup to run basic unit test.
 
 ## Golang Setup
-The latest version of Go (1.5.3) is installed (in _/usr/local/go_).
+The latest version of [Go](https://golang.org/) (1.5.3) is installed (in _/usr/local/go_).
 
 *$GOPATH* = /tdd_cpp/golang. As standard Go development, the Go projects must be under _$GOPATH/src_.
 
