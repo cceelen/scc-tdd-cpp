@@ -1,5 +1,5 @@
 # Linux development environment in Vagrant
-This repository provides a simple vagrant setup that creates a C++ and Python development environment (based upon ubuntu/vivid64) ready to use for TDD sessions.
+This repository provides a simple vagrant setup that creates a C++, Python and Go development environment (based upon ubuntu/vivid64) ready to use for TDD sessions.
 
 **Configuration**: 64bit, RAM 1GB, 2 CPUs.
 
@@ -50,10 +50,11 @@ vagrant up
 ```
 if everything is fine you should see in the console the result of a simple test run with Catch
 ```
-==> default: All tests passed (4 assertions in 1 test case)
 ==> default: ******************************
-==> default: Enjoy your TDD session in C++!
+==> default: Enjoy your TDD session!
+==> default:
 ==> default: ******************************
+
 ```
 * Now you can ssh to the VM instance.
   * if you have putty installed then connect to:
