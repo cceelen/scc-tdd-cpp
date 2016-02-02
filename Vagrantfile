@@ -90,6 +90,10 @@ Vagrant.configure(2) do |config|
   export PATH=$PATH:/usr/local/go/bin
   export GOPATH=/tdd_cpp/gocode
   go run $GOPATH/src/installation_test/hello.go
+  sudo add-apt-repository ppa:openjdk-r/ppa
+  sudo apt-get update
+	sudo apt-get install -y openjdk-8-jdk
+  cd /tdd_cpp/java && javac Hello.java && java HelloWorld
   echo '\n******************************'
   echo 'Enjoy your TDD session!\n'
   echo '******************************'
