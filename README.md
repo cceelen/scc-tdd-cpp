@@ -29,13 +29,15 @@ cinst git virtualbox vagrant
 git config --global core.autocrlf true
 ```
 
-## Linux Packages
+## Linux Packages installed
 * *build-essential*, *gcc-4.9*, *g++-4.9*, *make*, *cmake*, *git*, *vim*, *libboost-all-dev*
 * *[cppunit](http://sourceforge.net/projects/cppunit/)*, useful for unit testing
 * *[gtest](https://github.com/google/googletest)* (googletest), useful for unit testing
 * *[Catch](https://github.com/philsquared/Catch/)*, useful for unit testing.
 * [biicode](https://www.biicode.com) Optional C++ dependency manager.
 Use this if you do not want to write [Makefile](https://www.gnu.org/software/make/) or [cMake](https://cmake.org/) files by hand. It also allows you to cleanly isolate system libraries from dependencies required just by your project. So give it a try!
+* [Go](https://golang.org/) (1.5.3)
+* [OpenJDK 8](http://openjdk.java.net/projects/jdk8/)
 
 ## Running the VM
 * Open a powershell and find yourself a nice directory to work in.
@@ -87,12 +89,13 @@ This repository includes 2 flavors of C++ setups that are already configured.
 
 [python-unittest](./python-unittest) contains a minimal python setup to run basic unit test.
 
-## Golang Setup
-The latest version of [Go](https://golang.org/) (1.5.3) is installed (in _/usr/local/go_).
-
-*$GOPATH* = /tdd_cpp/golang. As standard Go development, the Go projects must be under _$GOPATH/src_.
-
+## Golang Project Setups
+Go executables are installed in _/usr/local/go_.
+*$GOPATH* = */tdd_cpp/gocode*. As standard Go development, the Go projects must be under _$GOPATH/src_.
 The standard [testing library](https://golang.org/pkg/testing/) is installed.
+
+## Java Project Setups
+There are no particular setups for Java. The */tdd_cpp/java* folder is available if you want to use it.
 
 ## Trouble Shooting
 
