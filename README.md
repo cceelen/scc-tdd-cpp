@@ -7,3 +7,12 @@ Feel free to clone it OR fork it OR make-it-better (open issues OR pull requests
 
 - [Learn how to organize it](https://github.com/alebaffa/coding-dojo-toolkit/wiki)
 - [Use this ready to use Vagrant image](https://github.com/alebaffa/coding-dojo-toolkit/wiki/Linux-development-environment-in-Vagrant)
+
+## Licence
+
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+</p>
