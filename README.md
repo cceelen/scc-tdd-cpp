@@ -3,6 +3,16 @@ This repository provides a simple vagrant setup that creates a C++, Python, Java
 
 **Configuration**: 64bit, RAM 1GB, 2 CPUs.
 
+- [Requirements](#requirements)
+- [Installation on Windows](#installation-on-windows)
+- [Linux Packages installed](#linux-packages-installed)
+- [Running the VM](#running-the-vm)
+- [Shutdown / Cleanup](#shutdown--cleanup)
+- [CPP Project Setups](#cpp-project-setups)
+- [Golang Project Setups](#golang-project-setups)
+- [Java Project Setups](#java-project-setups)
+- [Trouble Shooting](#trouble-shooting)
+
 ## Requirements
 * [PowerShell](https://technet.microsoft.com/en-us/library/hh847837.aspx) - On Windows you really want to have this instead of cmd.exe
 * [chocolatey](https://chocolatey.org/) - To install the following tools easily
