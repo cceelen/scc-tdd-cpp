@@ -1,16 +1,16 @@
 # Simple unit test project
-This simple unit test project uses biicode, gtest and gmock.
+This simple unit test project uses conan, gtest and gmock.
 
 ## Building
 Run the command
 ```
-  bii buzz
+  conan install --build=missing
 ```
-This will automatically find dependencies (*bii deps* and *bii find*), import and build everything.
+This will automatically find use the declared dependencies (conantfile.txt) and builds them.
 
-For only a plain build run
+Build the project with
 ```
-  bii build
+  conan build
 ```
 The resulting file is inside of the directory *bin*
 
