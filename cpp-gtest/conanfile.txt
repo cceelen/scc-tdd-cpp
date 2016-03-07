@@ -1,7 +1,7 @@
 [requires]
 Boost/1.60.0@lasote/stable
 gtest/1.7.0@lasote/stable
-googlemock/1.7.0@azriel91/stable-1
+googlemock/1.7.0@azriel91/stable-2
 
 [options]
 gtest:shared=True

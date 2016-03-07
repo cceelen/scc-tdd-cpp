@@ -1,5 +1,5 @@
-#include "google/gtest/include/gtest/gtest.h"
-#include "google/gmock/include/gmock/gmock.h"
+#include "gtest/gtest.h"
+#include "gmock/gmock.h"
 #include <boost/lexical_cast.hpp>
 
 int sum(int a, int b) { return a+b ; }

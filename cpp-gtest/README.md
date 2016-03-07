@@ -10,15 +10,15 @@ This will automatically find use the declared dependencies (conantfile.txt) and 
 
 Build the project with
 ```
-  conan build
+  mkdir build ; cd build ; cmake .. ; make
 ```
 The resulting file is inside of the directory *bin*
 
 ## Running the test
 The final file can be run with
 ```
-./bin/user_cpp-gtest_main
+./bin/run_test
 ```
 
 ## Edit the tests
-The tests are located in *./main.cpp*
+The tests are located in *./src/main.cpp*
