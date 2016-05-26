@@ -21,6 +21,7 @@ This _toolkit_ contains tips and tricks coming from our (mine, and other contrib
         - [Randori](#randori)
         - [Mob programming](#mob-programming)
         - [Pair programming](#pair-programming)
+        - [Prepared kata](#prepared-kata)
     - [Types of code katas](#types-of-code-katas)
         - [Algorithm](#algorithm)
         - [Refactoring](#refactoring)
@@ -95,6 +96,7 @@ Things that have to be prepared before the event:
 #### Randori
 #### Mob programming
 #### Pair programming
+#### Prepared kata
 ### Types of code katas
 #### Algorithm
 #### Refactoring
