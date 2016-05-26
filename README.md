@@ -2,7 +2,7 @@
 ![coding dojo](/img/Dojo.jpg)
 
 Hi, this is a toolkit to help you to organize and facilitate your coding dojo. It is a set of guidelines and suggestions coming from our own experience.
-It can be seen as an integration to the awesome [Coding Dojo Handbook](https://leanpub.com/codingdojohandbook) written by Emily Bache.
+It can be seen as an extension of the awesome [Coding Dojo Handbook](https://leanpub.com/codingdojohandbook) written by Emily Bache.
 
 Feel free to use it or to help us to make it better (PR are more than welcome!).
 
