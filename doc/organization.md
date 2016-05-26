@@ -13,7 +13,7 @@ This _toolkit_ contains tips and tricks coming from our (mine, and other contrib
     - [Technical requirements](#technical-requirements)
         - [Free environment](#free-environment)
         - [Common development environment](#common-development-environment)
-3. [Animate a coding dojo](#facilitate-a-coding-dojo)
+3. [Facilitate a coding dojo](#facilitate-a-coding-dojo)
     - [Is it your first coding dojo?](#is-it-your-first-coding-dojo)
     - [Your role as facilitator](#your-role-as-facilitator)
     - [Preparation](#preparation)
