@@ -1,9 +1,11 @@
 # Coding Dojo Toolkit
 ![coding dojo](/img/Dojo.jpg)
 
-Hi, this is a toolkit to help you to organize and facilitate your coding dojo.
+Hi, this is a toolkit to help you to organize and facilitate your coding dojo. It is a set of guidelines and suggestions coming from our own experience.
+It can be seen as an integration to the awesome [Coding Dojo Handbook](https://leanpub.com/codingdojohandbook) written by Emily Bache.
 
 Feel free to use it or to help us to make it better (PR are more than welcome!).
+
 
 - [Learn how to organize it](https://github.com/alebaffa/coding-dojo-toolkit/blob/master/doc/organization.md)
 - [Use this ready to use Vagrant image](https://github.com/alebaffa/coding-dojo-toolkit/blob/master/doc/vagrant.md)
