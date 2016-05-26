@@ -84,10 +84,10 @@ Vagrant.configure(2) do |config|
   sudo dpkg -i conan-ubuntu-64_0_7_4.deb
   rm conan-ubuntu-64_0_7_4.deb
   echo "\n"
-  echo "Installing Go 1.5.3 ...\n"
-  sudo wget https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
-  sudo tar -C /usr/local -xzf go1.5.3.linux-amd64.tar.gz
-  sudo rm go1.5.3.linux-amd64.tar.gz
+  echo "Installing Go 1.6 ...\n"
+  sudo wget https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
+  sudo tar -C /usr/local -xzf go1.6.linux-amd64.tar.gz
+  sudo rm go1.6.linux-amd64.tar.gz
   export PATH=$PATH:/usr/local/go/bin
   export GOPATH=/tdd_cpp/gocode
   go run $GOPATH/src/installation_test/hello.go
