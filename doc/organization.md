@@ -13,6 +13,7 @@ This _toolkit_ contains tips and tricks coming from our (mine, and other contrib
     - [Technical requirements](#technical-requirements)
         - [Free environment](#free-environment)
         - [Common development environment](#common-development-environment)
+        - [Alternatives](#alternatives)
 3. [Facilitate a coding dojo](#facilitate-a-coding-dojo)
     - [Is it your first coding dojo?](#is-it-your-first-coding-dojo)
     - [Your role as facilitator](#your-role-as-facilitator)
@@ -74,8 +75,9 @@ You can organize a coding dojo in any place.
 Depending on the type of coding dojo you want to organize, you can let people code using their favorite programming language/development environment. In general, during a pair programming session it's up to people to talk with their peers and organize themselves.
 #### Common development environment
 If you want to have all the participants using the same development environment (e.g. for randori sessions), we have prepared [this Vagrant image](https://github.com/alebaffa/coding-dojo-toolkit/wiki/Linux-development-environment-in-Vagrant) ready to use. It contains all the necessary libraries for Python, C++, Java and Go (Scala and SBT coming soon).
-
-***
+#### Alternatives
+* Use their own development environment (in case of pair programming each pair can decide).
+* Otherwise, [Cyber Dojo](http://www.cyber-dojo.org/) is a really excellent alternative (but no IDE in it).
 
 ## Facilitate a coding dojo
 ### Is it your first coding dojo?
