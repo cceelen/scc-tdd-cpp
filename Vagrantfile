@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "boxcutter/ubuntu1510"
+  config.vm.box = "boxcutter/ubuntu1604"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -78,20 +78,18 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
   sudo add-apt-repository ppa:openjdk-r/ppa
   sudo apt-get update
-  sudo apt-get install build-essential gcc-4.9 g++-4.9 libcppunit-dev make cmake libgtest-dev git vim libboost-all-dev unzip joe openjdk-8-jdk -y
-  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
-  wget https://s3-eu-west-1.amazonaws.com/conanio-production/downloads/conan-ubuntu-64_0_7_4.deb
-  sudo dpkg -i conan-ubuntu-64_0_7_4.deb
-  rm conan-ubuntu-64_0_7_4.deb
-  echo "\n"
-  echo "Installing Go 1.6 ...\n"
-  sudo wget https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
-  sudo tar -C /usr/local -xzf go1.6.linux-amd64.tar.gz
-  sudo rm go1.6.linux-amd64.tar.gz
-  export PATH=$PATH:/usr/local/go/bin
-  export GOPATH=/tdd_cpp/gocode
-  go run $GOPATH/src/installation_test/hello.go
-  cd /tdd_cpp/java && javac Hello.java && java HelloWorld
+  sudo apt-get install build-essential gcc g++ libcppunit-dev make cmake libgtest-dev git vim libboost-all-dev unzip joe openjdk-8-jdk golang-go -y
+  echo "\nInstalling conan.io"
+  wget -q https://github.com/conan-io/conan/releases/download/0.20.3/conan-ubuntu-64_0_20_3.deb
+  sudo dpkg -i conan-ubuntu-64_0_20_3.deb
+  rm conan-ubuntu-64_0_20_3.deb
+  echo "\nInstalling exercism.io"
+  wget -q https://github.com/exercism/cli/releases/download/v2.3.0/exercism-linux-64bit.tgz
+  sudo tar -C /usr/local/bin -xzvf exercism-linux-64bit.tgz
+  rm exercism-linux-64bit.tgz
+  mkdir -p /tdd_cpp/exercism
+  exercism --version
+  exercism --configure --dir=/tdd_cpp/exercism
   echo '\n******************************'
   echo 'Enjoy your TDD session!\n'
   echo '******************************'

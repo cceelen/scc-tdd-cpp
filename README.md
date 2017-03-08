@@ -9,6 +9,7 @@ Feel free to use it or to help us to make it better (PR are more than welcome!).
 
 - [Learn how to organize it](https://github.com/alebaffa/coding-dojo-toolkit/blob/master/doc/organization.md)
 - [Use this ready to use Vagrant image](https://github.com/alebaffa/coding-dojo-toolkit/blob/master/doc/vagrant.md)
+- [Use this preconfigured setup with exercism.io](http://exercism.io/cli/linux)
 
 ## Licence
 
